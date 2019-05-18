@@ -11,8 +11,7 @@ import javax.jms.ConnectionFactory
 class Factory {
 
     @Bean
-    public fun myFactory(connectionFactory: ConnectionFactory, configurer: DefaultJmsListenerContainerFactoryConfigurer): JmsListenerContainerFactory<*> {
-        System.out.println("---------------------- Chamou ----------------------");
+    fun myFactory(connectionFactory: ConnectionFactory, configurer: DefaultJmsListenerContainerFactoryConfigurer): JmsListenerContainerFactory<*> {
         var factory = DefaultJmsListenerContainerFactory()
         configurer.configure(factory, connectionFactory)
         return factory

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController
 class AboutController {
 
     @GetMapping
-    fun about() =
-            "Learn project for studies and practice"
+    fun about(): String {
+        return "Learn project for studies and practice"
+    }
 }

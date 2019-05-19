@@ -12,13 +12,16 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/factory")
 class FactoryPatternController {
 
-    @GetMapping("/{tipoComida}")
-    fun factory(@PathVariable("tipoComida") tipoComida: String): Comida {
-        var tipoEnumComida: TipoComida = TipoComida.valueOf(tipoComida)
+    @GetMapping
+    fun factory(): Comida {
+        var fabrica: FabricaComida = FabricaComida
 
-        var fabrica: FabricaComida = FabricaComida()
-        var comida: Comida = fabrica.criaComida(tipoEnumComida)
+        var comida1: Comida = fabrica.criaComida(TipoComida.DOCE)
+        fabrica.singletonInfo()
 
-        return comida
+        var comida2: Comida = fabrica.criaComida(TipoComida.SALGADA)
+        fabrica.singletonInfo()
+
+        return comida1
     }
 }

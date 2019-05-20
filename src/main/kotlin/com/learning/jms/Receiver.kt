@@ -8,6 +8,6 @@ class Receiver {
 
     @JmsListener(destination = "TransactionQueue", containerFactory = "myFactory")
     fun receiveMessage(message: String) {
-        System.out.println("Received <" + message + ">");
+        System.out.println("Received <" + message + ">")
     }
 }

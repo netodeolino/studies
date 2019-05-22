@@ -1,4 +1,4 @@
-package com.learning.entities
+package com.learning.patterns.factory
 
 open class Comida {
     lateinit var nome: String

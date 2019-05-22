@@ -1,10 +1,9 @@
 package com.learning.controllers
 
-import com.learning.entities.Comida
+import com.learning.patterns.factory.Comida
 import com.learning.enums.TipoComida
 import com.learning.patterns.factory.FabricaComida
 import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 

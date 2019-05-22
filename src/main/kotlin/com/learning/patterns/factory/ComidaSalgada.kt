@@ -1,4 +1,4 @@
-package com.learning.entities
+package com.learning.patterns.factory
 
 class ComidaSalgada : Comida {
     var qtdSal: Int = 0

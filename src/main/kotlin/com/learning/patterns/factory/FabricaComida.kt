@@ -1,8 +1,5 @@
 package com.learning.patterns.factory
 
-import com.learning.entities.Comida
-import com.learning.entities.ComidaDoce
-import com.learning.entities.ComidaSalgada
 import com.learning.enums.TipoComida
 
 object FabricaComida : FabricaTipoComida {

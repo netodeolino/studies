@@ -12,7 +12,7 @@ class PrototypePatternController {
 
     @GetMapping
     fun prototype(): CarPrototype {
-        val prototipo: FiestaPrototype = FiestaPrototype()
+        val prototipo = FiestaPrototype()
 
         val palioNovo = prototipo.clone()
         palioNovo.purchaseValue = 27900.0
